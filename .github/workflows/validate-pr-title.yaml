@@ -1,6 +1,3 @@
-# NOTE: This is a copy synced from:
-#   shaka-project/shaka-github-tools/validate-pr-title/validate-pr-title.yaml
-# Any changes should be made there to be synced across shaka-project repos.
 name: Validate PR Title
 
 # Read only permissions, to make pull_request_target safe to use.  We still
@@ -13,8 +10,7 @@ on:
   # NOTE: The automated PRs from release-please-action do not seem to trigger
   # any of the default PR triggers (opened, synchronize, reopened).  So we need
   # additional types.  This is a good set that makes it easy to trigger the
-  # workflow manually if needed.  This is not neccessary if your release-please
-  # workflow uses a personal access token (PAT) from Shaka Bot.
+  # workflow manually if needed.
   pull_request_target:
     types:
       - opened
